@@ -1,0 +1,145 @@
+<html lang="en">
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>BODA_Exhibition_Page</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+    <link rel="stylesheet" href="/resources/static/css/exhibition.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" >
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a54d1cc7252fa416a57f7fde315e55e5&libraries=services">
+    </script>
+   
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BODA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./carousel/main.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Community.html">커뮤니티</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">공지 사항</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"
+                            onclick="document.location.href='./searchP.html'">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <header class="test">
+            <div class="sub-wrap">
+                <div class="sub-tit01">
+                    <h2>전시회 정보</h2>
+                </div>
+                <div class="intro-top clearfix">
+                    <div class="a" style="display: flex; justify-content: center;">
+                        <div class="img-box" style="min-width: 300px; min-height: 420px;">
+                            <img src="./img/imageSrc.png" alt="" style="width: 546px; height: 680px;">
+                        </div>
+                        <div class="txt-box">
+                            <div class="event-title">
+                                <h2>[구캔갤러리] 일러스트레이터의 봄 : 새로운 영감</h2>
+                            </div>
+                            <div class="type-box">
+                                <ul>
+                                    <li>
+                                        <div class="type-th">
+                                            <span>장소</span>
+                                        </div>
+                                        <div class="type-td">
+                                            <span>서울 구로구 경인로 661 101동, 306호 구캔갤러리
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="type-th">
+                                            <span>기간</span>
+                                        </div>
+                                        <div class="type-td">
+                                            <span>2023-03-23 ~ 2023-04-23</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="type-th">
+                                            <span>시간</span>
+                                        </div>
+                                        <div class="type-td">
+                                            <span>am10:00~pm7:00</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="type-th">
+                                            <span>대상</span>
+                                        </div>
+                                        <div class="type-td">
+                                            <span>전연령</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="type-th">
+                                            <span>요금</span>
+                                        </div>
+                                        <div class="type-td">
+                                            <span>무료</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="detail-btn" style="margin-top: 30px;">
+                                <a href="#" target="_blank">홈페이지 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="intro-section common-section">
+                <h3>위치안내</h3>
+            </section>
+
+            <div class="map_wrap">
+                <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+
+                <div id="menu_wrap" class="bg_white">
+                    <div class="option">
+                        <div>
+                            <form onsubmit="searchPlaces(); return false;">
+                                키워드 : <input type="text" value="파티마" id="keyword" size="15">
+                                <button type="submit">검색하기</button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul id="placesList"></ul>
+                    <div id="pagination"></div>
+                </div>
+            </div>
+
+
+        </header>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+
+    #mid {
+      margin-top: 60px;
+    }
+
+    .content{
+      position: relative;
+      margin-top: 100px;;
+      margin: auto;
+    }
+
+    .row {
+      margin: 0px auto;
+      width: 1000px;
+    }
+
+    .mx-auto{
+      width:auto;
+      margin: 0px auto;
+    }
+    .align-right{
+      position: inherit;
+      right: 0;
+    }
+
+    .search-right{
+      position: absolute;
+      right: 0;
+    }

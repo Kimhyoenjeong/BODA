@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>BODA_Login_Page</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" >
+  <link href="/resources/static/css/login.css" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BODA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./carousel/main.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Community.html">커뮤니티</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">공지 사항</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onclick="document.location.href='./searchP.html'">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+   <body>
+    <div class="login-wrapper" id="login-wrapper2">
+        <h2 class="fs-1">Login</h2>
+        <form method="post" action="" id="login-form">
+          <div class="input_row" >
+            <img src="./img/person_.png" alt="" class="person_img">
+            <input type="text" name="userName" placeholder="Email">
+          </div>
+          <div class="input_row">
+            <img src="./img/key_.png" alt="" class="key_img">
+            <input type="password" name="userPassword" placeholder="Password">
+          </div>
+            <label for="remember-check" class="remember-check">
+                <input type="checkbox" id="remember-check"> 아이디 저장하기
+            </label>
+            <input type="submit" value="Login">
+            <div class="join">
+              <a href="#">회원가입</a>
+            </div>
+        </form>
+        <hr>
+        <h3>소셜 계정으로 간편 로그인/회원가입</h3>
+        <div class="sns_login">
+          <button class="btn-sns"><img src="/resources/static/img/kakao_login_medium_narrow.png" alt="" class="btn_img"></button>
+          <button class="btn-sns"><img src="/resources/static/img/naver_btnG_완성형.png" alt="" class="btn_img"></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
